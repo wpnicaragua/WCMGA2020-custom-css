@@ -1,5 +1,91 @@
+
 /**************************************************************************************************
  *
  *  @Section: Header
  *
 ***************************************************************************************************/
+
+.header-toggles {
+	display: none;
+}
+
+
+#site-header{
+	background: #2362A3;
+	.primary-menu{
+		li{
+			a{
+				color: #fff;
+				text-decoration: none;
+			}
+			.icon{
+				color: #fff !important;
+			}
+			ul.sub-menu{
+				background-color: #fff;
+				&::after{
+					border-bottom-color: #fff;
+				}
+				li a{
+					color: #000;
+				}
+			}
+		}
+
+	}
+	.toggle{
+		color: #fff;
+		.toggle-inner{
+			.toggle-icon{
+				color: #fff;
+			}
+		}
+	}
+
+}
+
+
+
+
+@media (min-width: 700px) {
+	.section-inner {
+		width: calc(100% - 25rem);
+	}
+}
+
+
+
+
+/*
+#menu-item-178 {
+	margin: auto;
+	margin-left: 2.5rem;
+}
+#menu-item-178 a {
+	display: inline-block;
+	background: #F4DF22;
+	padding: 10px 12px;
+	position: relative;
+	color: #151F51 !important;
+	font-weight: bold;
+}
+#menu-item-178 a:after {
+	content: none;
+}
+
+
+.primary-menu a:after {
+	display: block;
+	position: absolute;
+	top: calc(100% + -5px);
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #fff;
+	content: '';
+	transition: all .3s ease;
+}
+
+.primary-menu a:hover:after {
+	width: calc(100% - 10px);
+} */

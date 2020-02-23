@@ -3,3 +3,40 @@
  *  @Section: Global
  *
 ***************************************************************************************************/
+
+// Hero
+
+#post-202{
+	margin-top: -10rem;
+	header{
+		display: none;
+	}
+}
+
+.tituloHero{
+	font-size: 38pt;
+	line-height: initial;
+	padding-right: 13rem;
+}
+
+.Col_heroHome {
+	max-width: 100rem !important;
+}
+
+.max_width {
+	width: 100% !important;
+	max-width: 100% !important;
+} 
+
+.btn_ticket{
+	background: $yellow_btn;
+	color: $blue_dark;
+	display: inline-block;
+	padding: 1.5rem 3rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 13pt;
+}
+
+
+
