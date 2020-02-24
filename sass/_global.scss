@@ -43,14 +43,15 @@
 .bienvenida_home{
 	max-width: 1024px;
 	padding: 0 2rem;
+	font-family: $font-default;
 	.wp-block-group__inner-container{
-		max-width: 600px;
+		max-width: 700px;
 		h3{
-			color: #151F51;
+			color: $blue_main;
 		}
 		p{
 			color: $blue_dark;
-			font-size: 16pt;
+			font-size: 18pt;
 			strong{
 				color: #43B297;
 			}
@@ -61,7 +62,7 @@
 .content_blocks{
 	.blocks{
 		background: #151F51;
-		padding: 1rem;
+		padding: 2rem;
 		.wp-block-group{
 			margin-top: 0;
 			margin-bottom: 0;
@@ -82,6 +83,7 @@
 				&:after{
 					content: '';
 					background: url('https://2020.managua.wordcamp.org/files/2020/02/arrow-rigth.png') no-repeat center;
+					background-size: contain;
 					height: 28px;
 					width: 32px;
 					position: absolute;
@@ -91,6 +93,15 @@
 		}
 	}
 	.block_1{
-		background: url('https://github.com/wpnicaragua/WCMGA2020-custom-css/blob/master/image/bg-ponentes.jpg') no-repeat center;
+		background: url('https://2020.managua.wordcamp.org/files/2020/02/bg-ponentes.jpg') no-repeat center;
+		background-size: cover;
+	}
+	.block_2{
+		background: url('https://2020.managua.wordcamp.org/files/2020/02/bg-programas.jpg') no-repeat center;
+		background-size: cover;
+	}
+	.block_3{
+		background: url('https://2020.managua.wordcamp.org/files/2020/02/bg-entradas.jpg') no-repeat center;
+		background-size: cover;
 	}
 }
