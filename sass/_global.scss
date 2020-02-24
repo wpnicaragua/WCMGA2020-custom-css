@@ -4,7 +4,7 @@
  *
 ***************************************************************************************************/
 
-// Hero
+// Home
 
 #post-202{
 	margin-top: -10rem;
@@ -21,11 +21,6 @@
 
 .Col_heroHome {
 	max-width: 100rem !important;
-}
-
-.max_width {
-	width: 100% !important;
-	max-width: 100% !important;
 } 
 
 .btn_ticket{
@@ -36,7 +31,17 @@
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 13pt;
+	text-decoration: none;
+}
+.container_hm{
+	max-width: 1024px;
+	padding: 0 2rem;
+
 }
 
+.bienvenida_home{
+	max-width: 1024px;
+	padding: 0 2rem;
 
+}
 
