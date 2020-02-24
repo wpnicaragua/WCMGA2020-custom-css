@@ -136,7 +136,7 @@
 .banner-comunidad{
 	.text_banner_comunidad{
 		font-family: $font-default;
-		max-width: 700px;
+		max-width: 700px !important;
 		font-weight: bold;
 		font-size: 48px;
 		line-height: initial;
@@ -145,7 +145,7 @@
 			font-size: 22pt;
 		}
 	}
-	a{
+	.wp-block-button__link:hover{
 		text-decoration: none;
 	}
 }
