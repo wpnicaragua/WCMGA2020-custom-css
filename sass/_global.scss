@@ -61,30 +61,36 @@
 .content_blocks{
 	.blocks{
 		background: #151F51;
-		@include cover-background('./../image/bg-ponentes.jpg');
 		padding: 1rem;
+		.wp-block-group{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
 		.wp-block-button{
 			width: 100%;
 			margin-top: 3rem;
 			a{
-				//background-color: transparent;
+				background-color: transparent;
 				text-decoration: none;
 				position: relative;
 				display: inline-block;
 				width: 100%;
 				padding: initial;
-				text-align: left;				
+				text-align: left;
+				font-size: 18pt;
+				text-transform: none;				
 				&:after{
 					content: '';
-					background: #e3e3e3;
-					@include cover-background('./../image/arrow-rigth.png');
-					height: 36px;
-					width: 40px;
+					background: url('https://2020.managua.wordcamp.org/files/2020/02/arrow-rigth.png') no-repeat center;
+					height: 28px;
+					width: 32px;
 					position: absolute;
 					right: 0;
-					top: -1rem;
 				}
 			}
 		}
+	}
+	.block_1{
+		background: url('https://github.com/wpnicaragua/WCMGA2020-custom-css/blob/master/image/bg-ponentes.jpg') no-repeat center;
 	}
 }
