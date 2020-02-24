@@ -165,25 +165,35 @@
 
 
 $breakpoints: (
-    "phone":        400px,
-    "phone-wide":   480px,
-    "phablet":      560px,
-    "tablet-small": 640px,
-    "tablet":       768px,
-    "tablet-wide":  1024px,
-    "desktop":      1248px,
-    "laptop":       1366px,
+  "phone":        400px,
+  "phone-wide":   480px,
+  "phablet":      560px,
+  "tablet-small": 640px,
+  "tablet":       768px,
+  "tablet-wide":  1024px,
+  "desktop":      1248px,
+  "laptop":       1366px,
   "desktop-wide": 1440px,
   "desjtio-wider": 1920px
-);
+  );
 @mixin mq($width, $type: min) {
-    @if map_has_key($breakpoints, $width) {
-        $width: map_get($breakpoints, $width);
-        @if $type == max {
-            $width: $width - 1px;
-        }
-        @media only screen and (#{$type}-width: $width) {
-            @content;
-        }
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
     }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
 }
+
+
+//Background
+@mixin cover-background($img-uri,
+  $background-top: "center", $background-left: "center") {
+  background: url($img-uri) no-repeat unquote($background-top) unquote($background-left);
+  background-size: cover;
+  
+}
+//@include cover-background('../ruta-de-la-imagen');

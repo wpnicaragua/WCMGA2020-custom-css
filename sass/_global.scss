@@ -7,6 +7,7 @@
 // Home
 
 #post-202{
+	font-family: $font-default;
 	margin-top: -10rem;
 	header{
 		display: none;
@@ -42,6 +43,48 @@
 .bienvenida_home{
 	max-width: 1024px;
 	padding: 0 2rem;
-
+	.wp-block-group__inner-container{
+		max-width: 600px;
+		h3{
+			color: #151F51;
+		}
+		p{
+			color: $blue_dark;
+			font-size: 16pt;
+			strong{
+				color: #43B297;
+			}
+		}
+	}
 }
 
+.content_blocks{
+	.blocks{
+		background: #151F51;
+		@include cover-background('./../image/bg-ponentes.jpg');
+		padding: 1rem;
+		.wp-block-button{
+			width: 100%;
+			margin-top: 3rem;
+			a{
+				//background-color: transparent;
+				text-decoration: none;
+				position: relative;
+				display: inline-block;
+				width: 100%;
+				padding: initial;
+				text-align: left;				
+				&:after{
+					content: '';
+					background: #e3e3e3;
+					@include cover-background('./../image/arrow-rigth.png');
+					height: 36px;
+					width: 40px;
+					position: absolute;
+					right: 0;
+					top: -1rem;
+				}
+			}
+		}
+	}
+}
