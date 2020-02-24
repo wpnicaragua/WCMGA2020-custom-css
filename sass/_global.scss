@@ -13,7 +13,9 @@
 		display: none;
 	}
 }
-
+.header-titles-wrapper .toggle-inner .toggle-text{
+	color: #fff;
+}
 .tituloHero{
 	font-size: 38pt;
 	line-height: initial;
@@ -22,6 +24,20 @@
 
 .Col_heroHome {
 	max-width: 100rem !important;
+	@include phone {
+		text-align: center;
+		img{
+			width: 80%;
+			padding-top: 4rem;
+		}
+		h2{
+			font-size: 18pt;
+		}
+		.btn_ticket{
+			text-align: center;
+			width: 100%;
+		}
+	}
 } 
 
 .btn_ticket{
@@ -52,6 +68,11 @@
 		p{
 			color: $blue_dark;
 			font-size: 18pt;
+			font-family: $font-default;
+			@include phone {
+				font-size: 12pt;
+				padding: 0;
+			}
 			strong{
 				color: #43B297;
 			}
@@ -60,6 +81,9 @@
 }
 
 .content_blocks{
+	@include desktop {
+		width: calc(100% - 30rem);
+	}
 	.blocks{
 		background: #151F51;
 		padding: 2rem;
@@ -79,10 +103,13 @@
 				padding: initial;
 				text-align: left;
 				font-size: 18pt;
-				text-transform: none;				
+				text-transform: none;	
+				@include phone {
+					font-size: 16pt;
+				}			
 				&:after{
 					content: '';
-					background: url('https://2020.managua.wordcamp.org/files/2020/02/arrow-rigth.png') no-repeat center;
+					@include cover-background('https://2020.managua.wordcamp.org/files/2020/02/arrow-rigth.png');
 					background-size: contain;
 					height: 28px;
 					width: 32px;
@@ -93,15 +120,15 @@
 		}
 	}
 	.block_1{
-		background: url('https://2020.managua.wordcamp.org/files/2020/02/bg-ponentes.jpg') no-repeat center;
+		@include cover-background('https://2020.managua.wordcamp.org/files/2020/02/bg-ponentes.jpg');
 		background-size: cover;
 	}
 	.block_2{
-		background: url('https://2020.managua.wordcamp.org/files/2020/02/bg-programas.jpg') no-repeat center;
+		@include cover-background('https://2020.managua.wordcamp.org/files/2020/02/progras2.jpg');
 		background-size: cover;
 	}
 	.block_3{
-		background: url('https://2020.managua.wordcamp.org/files/2020/02/bg-entradas.jpg') no-repeat center;
+		@include cover-background('https://2020.managua.wordcamp.org/files/2020/02/bg-entradas.jpg');
 		background-size: cover;
 	}
 }

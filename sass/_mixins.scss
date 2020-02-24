@@ -197,3 +197,27 @@ $breakpoints: (
   
 }
 //@include cover-background('../ruta-de-la-imagen');
+
+//Media Query
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$desktop-small: 998px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-small - 1px}) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+//@include tablet {}
