@@ -208,10 +208,11 @@
 		}
 	}
 	.guardabarranco{
+		position: relative;
 		img{
 			position: absolute;
-			right: 2rem;
-			bottom: 8rem;
+			right: -20rem;
+			bottom: -5rem;
 			@include phone {
 				display: none;
 			}
