@@ -182,7 +182,7 @@
 		color: $blue_dark;
 		font-size: 18pt;
 		line-height: normal;
-		max-width: 600px;
+		max-width: 600px !important;
 		font-weight: 300;
 		@include phone {
 			font-size: 14pt;
