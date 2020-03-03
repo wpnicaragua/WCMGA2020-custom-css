@@ -156,7 +156,7 @@
 		line-height: initial;
 		text-align: center;
 		@include phone {
-			font-size: 22pt;
+			font-size: 20pt;
 		}
 	}
 	.wp-block-button__link:hover{
@@ -224,8 +224,9 @@
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: contain;
-	padding-bottom: 22rem;
+	padding-bottom: 22rem !important;
 	@include phone {
 		background-image: none;
+		padding-bottom: inherit;
 	}
 }
