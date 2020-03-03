@@ -53,7 +53,9 @@
 	font-size: 13pt;
 	text-decoration: none;
 	&:hover{
-		background: rgba($yellow_btn, 0.5);
+		background: rgba($yellow_btn, 0.85);
+		text-decoration: none !important;
+		color: $blue_dark;
 	}
 }
 .container_hm{
@@ -123,8 +125,9 @@
 					right: 0;
 					transform: perspective(1px) translateZ(0);
 				}
-				&:hover{
-					animation-name: hvr_horizontal 1s ease-in-out;
+				&:hover:after{
+					animation: hvr_horizontal 1s ease-in-out;			
+					
 				}
 			}
 		}
@@ -163,7 +166,7 @@
 
 .bg-guardabarranco{
 	font-family: $font-default;
-	max-width: 900px;
+	max-width: 900px !important;
 	text-align: center;
 
 	h2{
@@ -175,6 +178,7 @@
 		}
 	}
 	p{
+		font-family: $font-default;
 		color: $blue_dark;
 		font-size: 18pt;
 		line-height: normal;
@@ -197,7 +201,9 @@
 		font-size: 13pt;
 		text-decoration: none;
 		&:hover{
-			background: rgba($yellow_btn, 0.5);
+			background: rgba($yellow_btn, 0.85);
+			text-decoration: none !important;
+			color: $blue_dark;
 		}
 	}
 	.guardabarranco{
@@ -218,4 +224,7 @@
 	background-position: bottom;
 	background-size: contain;
 	padding-bottom: 22rem;
+	@include phone {
+		background-image: none;
+	}
 }
