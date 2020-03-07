@@ -3,3 +3,14 @@
  *  @Section: Footer
  *
 ***************************************************************************************************/
+.widget.wcb_widget_sponsors{
+    .widget-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include phone{
+            grid-template-columns: 1fr;
+        }
+        grid-column-gap: 35px;
+        
+    }
+}
