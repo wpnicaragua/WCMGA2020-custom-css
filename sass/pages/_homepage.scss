@@ -3,3 +3,254 @@
  *  @Section: Homepage
  *
 ***************************************************************************************************/
+// Home
+.bg_fixed{
+	background-attachment: fixed;
+}
+
+#post-202{
+	font-family: $font-default;
+	margin-top: -10rem;
+	header{
+		display: none;
+	}
+}
+.header-titles-wrapper .toggle-inner .toggle-text{
+	color: #fff !important;
+}
+.tituloHero{
+	font-size: 38pt;
+	line-height: initial;
+	padding-right: 13rem;
+}
+
+.Col_heroHome {
+	max-width: 100rem !important;
+	@include phone {
+		text-align: center;
+		img{
+			width: 80%;
+			padding-top: 4rem;
+		}
+		h2{
+			font-size: 18pt;
+		}
+		.btn_ticket{
+			text-align: center;
+			width: 100%;
+		}
+	}
+} 
+
+.btn_ticket{
+	background: $yellow_btn;
+	color: $blue_dark;
+	display: inline-block;
+	padding: 1.5rem 3rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 13pt;
+	text-decoration: none;
+	&:hover{
+		background: rgba($yellow_btn, 0.85);
+		text-decoration: none !important;
+		color: $blue_dark;
+	}
+}
+.container_hm{
+	max-width: 1024px;
+	padding: 0 2rem;
+
+}
+
+.bienvenida_home{
+	max-width: 1024px;
+	padding: 0 2rem;
+	font-family: $font-default;
+	.wp-block-group__inner-container{
+		max-width: 700px;
+		h3{
+			color: $blue_main;
+		}
+		p{
+			color: $blue_dark;
+			font-size: 18pt;
+			font-family: $font-default;
+			@include phone {
+				font-size: 12pt;
+				padding: 0;
+			}
+			strong{
+				color: #43B297;
+			}
+		}
+	}
+}
+
+.content_blocks{
+	@include desktop {
+		width: calc(100% - 30rem);
+	}
+	.blocks{
+		background: #151F51;
+		padding: 2rem;
+		.wp-block-group{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.wp-block-button{
+			width: 100%;
+			margin-top: 3rem;
+			a{
+				background-color: transparent;
+				text-decoration: none;
+				position: relative;
+				display: inline-block;
+				width: 100%;
+				padding: initial;
+				text-align: left;
+				font-size: 18pt;
+				text-transform: none;	
+				@include phone {
+					font-size: 16pt;
+				}			
+				&:after{
+					content: '';
+					@include cover-background('https://2020.managua.wordcamp.org/files/2020/02/arrow-rigth.png');
+					background-size: contain;
+					height: 28px;
+					width: 32px;
+					position: absolute;
+					right: 0;
+					transform: perspective(1px) translateZ(0);
+				}
+				&:hover:after{
+					animation: hvr_horizontal 1s ease-in-out;			
+					
+				}
+			}
+		}
+	}
+	.block_1{
+		@include cover-background('https://2020.managua.wordcamp.org/files/2020/02/bg-ponentes.jpg');
+		background-size: cover;
+	}
+	.block_2{
+		@include cover-background('https://2020.managua.wordcamp.org/files/2020/02/progras2.jpg');
+		background-size: cover;
+	}
+	.block_3{
+		@include cover-background('https://2020.managua.wordcamp.org/files/2020/02/bg-entradas.jpg');
+		background-size: cover;
+	}
+}
+
+.banner-comunidad{
+	margin-bottom: 0 !important;
+	.text_banner_comunidad{
+		font-family: $font-default;
+		max-width: 700px !important;
+		font-weight: bold;
+		font-size: 48px;
+		line-height: initial;
+		text-align: center;
+		@include phone {
+			font-size: 20pt;
+		}
+	}
+	.wp-block-button__link:hover{
+		text-decoration: none;
+		background: rgba(255, 255, 255, 0.15);
+	}
+}
+
+.bg-guardabarranco{
+	font-family: $font-default;
+	max-width: 900px !important;
+	text-align: center;
+
+	h2{
+		color: $blue_main;
+		font-size: 32pt;
+		line-height: normal;
+		@include phone {
+			font-size: 20pt;
+		}
+	}
+	p{
+		font-family: $font-default;
+		color: $blue_dark;
+		font-size: 18pt;
+		line-height: normal;
+		max-width: 600px !important;
+		font-weight: 300;
+		@include phone {
+			font-size: 14pt;
+		}
+		strong{
+			color: $turquosie;
+		}
+	}
+	a{
+		background: $yellow_btn;
+		color: $blue_dark;
+		display: inline-block;
+		padding: 1.5rem 3rem;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 13pt;
+		text-decoration: none;
+		&:hover{
+			background: rgba($yellow_btn, 0.85);
+			text-decoration: none !important;
+			color: $blue_dark;
+		}
+	}
+	.guardabarranco{
+		position: relative;
+		img{
+			position: absolute;
+			right: -20rem;
+			bottom: -5rem;
+			@include phone {
+				display: none;
+			}
+		}
+	}
+}
+
+.bg_vector{
+	background-image: url(https://2020.managua.wordcamp.org/files/2020/03/img-ciudad.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: contain;
+	padding-bottom: 22rem !important;
+	@include phone {
+		background-image: none;
+		padding-bottom: inherit;
+	}
+}
+
+//Social Icons
+#social-icons{
+    display: grid;
+	grid-template-columns: repeat(4, 2.6em);
+	grid-column-gap: 1em;
+    align-items: center;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    border-bottom: 0.8px solid #6d6d6d;
+	a{
+		background-color: #dedcdc;
+		padding: 0.5em;
+        width: 2.6em;
+        height: 2.6em;
+		text-align: center;
+		border-radius: 50%;
+		i{
+        color: #2362A3;
+        font-size: 1.3em;
+        text-align: center;
+		}
+	}
+}

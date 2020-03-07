@@ -5,7 +5,7 @@
 */
 
 // Global.
-
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css");
 @import "variables";
 @import "mixins";
 @import "grid";
@@ -15,7 +15,6 @@
 @import "sponsors";
 @import "footer";
 @import "forms";
-
 
 // Templates/Pages.
 @import "./pages/homepage";
